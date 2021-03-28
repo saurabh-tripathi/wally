@@ -42,3 +42,15 @@ poetry run qa  # run all checks
 
 Publish by bumping the `version` in [pyproject.toml](pyproject.toml) and
 committing to master (*e.g.*, via a PR merge).
+
+
+# TODO's
+- Define sceptre templates for launching AWS resources
+  - For Jenkins master
+    - EC2 instance
+    - Install Jenkins
+    - Install git
+    - Install docker
+    - Create docker group
+    - Add Jenkins user to the docker group
+    - Restart Jenkins service
