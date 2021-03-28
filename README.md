@@ -3,12 +3,8 @@
 ## Using
 
 ```
-poetry add your-project
+poetry add wally
 ```
-
-## API Specification for your-project
-
-It is highly recomended to outline the interface for utilizing your package.
 
 ## Developing
 
