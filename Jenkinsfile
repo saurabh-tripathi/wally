@@ -19,11 +19,10 @@ pipeline {
     }
 
     stage('Build image') {
-      steps {{
+      steps {
           sh "docker build -t ${env.BUILD_IMAGE} ."
         }
       }
-    }
 
     stage('Format check') {
       steps {
