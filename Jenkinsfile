@@ -50,7 +50,7 @@ pipeline {
 
     stage('Unit test') {
       steps {
-          dockerRun(env.BUILD_IMAGE, 'poetry run unit', '-v $(pwd)/coverage:/cerbo-feature-store/coverage')
+          dockerRun(env.BUILD_IMAGE, 'poetry run unit', '-v $(pwd)/coverage:/wally/coverage')
           cobertura coberturaReportFile: 'coverage/coverage.xml'
         }
       }
