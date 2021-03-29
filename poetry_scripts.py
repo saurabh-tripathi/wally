@@ -61,7 +61,7 @@ def docs() -> None:
 
 def unit() -> None:
     """Run all unit tests. These should be fast running with no external system dependencies."""
-    execute("unit tests", ["pytest", "tests/unit"], "Please fix the failing test.")
+    execute("unit tests", ["pytest", "tests"], "Please fix the failing test.")
 
 
 # This routine runs all the defined tasks in order

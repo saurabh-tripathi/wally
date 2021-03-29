@@ -28,6 +28,7 @@ format = "poetry_scripts:format"
 lint = "poetry_scripts:lint"
 type_check = "poetry_scripts:type_check"
 docs = "poetry_scripts:docs"
+unit = "poetry_scripts:unit"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
@@ -48,7 +49,7 @@ testpaths = ["tests"]
 
 [tool.coverage.run]
 branch = true
-source = ["godaddy_example"]
+source = ["wally"]
 
 [tool.coverage.report]
 exclude_lines = [
